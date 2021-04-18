@@ -1,0 +1,21 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            const double pi = 3.14;
+            double radius;
+
+            Console.WriteLine("Input radius of a Circle");
+
+            radius = Convert.ToDouble (Console.ReadLine());
+
+            Console.WriteLine(radius*radius*pi);
+
+
+        }
+    }
+}
