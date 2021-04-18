@@ -1,0 +1,19 @@
+using System;
+
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {                      
+            Console.WriteLine("Input the lengths of the sides of the triangle");
+            double a = Convert.ToDouble(Console.ReadLine());
+            double b = Convert.ToDouble(Console.ReadLine());
+            double c = Convert.ToDouble(Console.ReadLine());
+            double p = (a + b + c) / 2;
+            double s = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
+            Console.WriteLine("Area of a triangle = {0}", s);
+        }
+    }
+}
